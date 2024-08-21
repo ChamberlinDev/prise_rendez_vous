@@ -20,7 +20,8 @@
     </div>
 </form> -->
 <div class="ml-auto">
-        <a href="#" class="btn btn-sm btn-primary shadow-sm">Déconnexion</a>
+    <a href="#" class=" text-decoration-none text-dark px-4">{{ auth()->user()->firstname }} {{ auth()->user()->name }}</a> 
+        <a href="{{route('logoutUser')}}" class="btn btn-sm btn-primary shadow-sm">Déconnexion</a>
     </div>
 <!-- Topbar Navbar -->
 
