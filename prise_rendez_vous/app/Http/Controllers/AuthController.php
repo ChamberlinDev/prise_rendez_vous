@@ -20,6 +20,7 @@ class AuthController extends Controller
             'name'=>'required',
             'firstname'=>'required',
             'role'=>'required',
+            'telephone'=>'required|integer|min:8',
             'email'=>'required',
             'password'=>'required|string|min:8',
         ]);
